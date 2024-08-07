@@ -11,10 +11,10 @@ import java.time.Year;
 
 /**
  * <p>
- * 用户信息
+ * 马匹信息
  * </p>
  */
-@TableName("user")
+@TableName("horse")
 public class HorseInfo implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -26,6 +26,11 @@ public class HorseInfo implements Serializable {
      * 马匹名称
      */
     private String name;
+
+    /**
+     * 马匹头像
+     */
+    private String headImg;
     /**
      * 品种
      */
@@ -42,11 +47,16 @@ public class HorseInfo implements Serializable {
     /**
      * 血统信息
      */
-    private Text pedigree;
+    private String pedigree;
     /**
      * 健康状况
      */
     private String healthStatus;
+
+    /**
+     * 履历内容
+     */
+    private Text content;
     /**
      * 创建时间
      */
@@ -64,6 +74,13 @@ public class HorseInfo implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getHeadImg(){
+        return headImg;
+    }
+    public void setHeadImg(String headImg) {
+        this.headImg = headImg;
     }
 
     public String getName() {
@@ -98,11 +115,11 @@ public class HorseInfo implements Serializable {
         this.birthYear = birthYear;
     }
 
-    public Text getPedigree() {
+    public String getPedigree() {
         return pedigree;
     }
 
-    public void setPedigree(Text pedigree) {
+    public void setPedigree(String pedigree) {
         this.pedigree = pedigree;
     }
 
@@ -112,6 +129,13 @@ public class HorseInfo implements Serializable {
 
     public void setHealthStatus(String healthStatus) {
         this.healthStatus = healthStatus;
+    }
+    public Text getContent(){
+        return content;
+    }
+
+    public void setContent(Text content) {
+        this.content = content;
     }
 
     public LocalDateTime getCreatedAt() {
@@ -135,11 +159,13 @@ public class HorseInfo implements Serializable {
         return "HorseInfo{" +
                 "id=" + id +
                 ", name=" + name +
+                ", headImg=" + headImg +
                 ", breed=" + breed +
                 ", gender=" + gender +
                 ", birthYear=" + birthYear +
                 ", pedigree=" + pedigree +
                 ", healthStatus=" + healthStatus +
+                ", content=" + content +
                 ", createAt=" + createdAt +
                 ", updatedAt=" + updatedAt +
                 "}";

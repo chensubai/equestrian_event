@@ -5,7 +5,7 @@ import com.example.equestrian_event.dao.model.HorseInfo;
 
 /**
  * <p>
- * 用户信息 Mapper 接口
+ * 马匹信息 Mapper 接口
  * </p>
  */
 public interface HorseInfoMapper extends BaseMapper<HorseInfo> {

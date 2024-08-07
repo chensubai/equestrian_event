@@ -40,9 +40,9 @@ public class ApiRouterConsts {
     public static final String NEWS_URL_PREFIX = "/news";
 
     /**
-     * 小说模块请求路径前缀
+     * 马匹模块请求路径前缀
      */
-    public static final String BOOK_URL_PREFIX = "/book";
+    public static final String HORSE_URL_PREFIX = "/horse";
 
     /**
      * 会员模块请求路径前缀
@@ -70,9 +70,9 @@ public class ApiRouterConsts {
     public static final String API_FRONT_NEWS_URL_PREFIX = API_FRONT_URL_PREFIX + NEWS_URL_PREFIX;
 
     /**
-     * 前台门户小说相关API请求路径前缀
+     * 前台门户马匹相关API请求路径前缀
      */
-    public static final String API_FRONT_BOOK_URL_PREFIX = API_FRONT_URL_PREFIX + BOOK_URL_PREFIX;
+    public static final String API_FRONT_HORSE_URL_PREFIX = API_FRONT_URL_PREFIX + HORSE_URL_PREFIX;
 
     /**
      * 前台门户会员相关API请求路径前缀
